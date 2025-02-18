@@ -1,5 +1,6 @@
 import { db } from "@/utils/dbConnection";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export const metadata = {
   title: "All Posts",
@@ -27,6 +28,6 @@ export default async function PostsPage() {
     );
   } catch (error) {
     console.error("Error fetching posts:", error);
-    return <h1 className="text-red-500 text-3xl">Error loading posts</h1>;
+    return notFound();
   }
 }
