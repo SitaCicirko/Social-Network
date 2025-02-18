@@ -8,10 +8,10 @@ export default function NotFound() {
           Sorry, I think you&apos;re lost.
         </h1>
         <Link
-          href="/trails"
+          href="/"
           className="inline-block px-6 py-3 bg-[#124e66] text-white rounded-lg hover:bg-[#84b8ec] hover:text-[#124e66] transition duration-300"
         >
-          Go Back to Trails
+          Go Back
         </Link>
       </div>
     </div>
